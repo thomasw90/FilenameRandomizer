@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox spacing="5.0">
+         <children>
+            <HBox spacing="5.0">
+               <children>
+                  <TextField fx:id="path" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#openFolderDialog" text="...." />
+               </children>
+            </HBox>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#start" text="Start" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>
